@@ -1,5 +1,11 @@
 create table records_flat as 
-select records.*, 
+select records.id,
+       records.age,
+       records.education_num,
+       records.capital_gain,
+       records.capital_loss,
+       records.hours_week,
+       records.over_50k,
        countries.name as native_country,
        education_levels.name as highest_education_lvl,
        marital_statuses.name as marital_status,
