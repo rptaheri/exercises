@@ -104,6 +104,6 @@ or
 
 
 # write our file to a csv for plotting in D3
-write.csv(records, file="c:/users/roshmaster/desktop/d3.csv")
+write.csv(records, file=outloc)
 
 
