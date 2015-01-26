@@ -38,7 +38,7 @@ colnames(continuous) <- c("over_50k","age","capital_gain","capital_loss","hours_
 # continuous variable correlations
 mixed.cor(continuous) # medium relationship between education_num and over_50k (0.46)
 
-# look @ mosaic plot education and over_50k
+# look @ mosaic plot education and over_50k# re
 mosaicplot(table(records$education_num,records$over_50k))
 
 # histograms of continuous variables
