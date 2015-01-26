@@ -15,15 +15,8 @@ library(caret)
 records = read.csv(records_loc) #read csv file
 
 # -------------------------  TO-DO --------------------------- #
-# 1. find/write reliable function for partitioning data 70/30 and 
-#    small test sample
-# 2. find Type 3 Analysis of Effects equivalent
-# 3. run box-tidwell test on continuos variables
-# 4. find relationship for graph
-# 5. 1/2 page write-up
-# 6. look into impute methods, 3620 records not used due to 
-#    missing values
-# 7. figure out how to read crosstable in R
+# 1. find Type 3 Analysis of effects equivalent in R
+# 2. find box-tidwell test in R
 # ------------------------------------------------------------ #
 
 # create a data frame that contains only continuous variables
