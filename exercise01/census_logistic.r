@@ -48,6 +48,9 @@ hist(records$capital_loss)
 # cross tabs with categorical variables
 CrossTable(records$over_50k, records$gender)
 CrossTable(records$over_50k, records$marital_status)
+CrossTable(records$over_50k, records$occupation)
+CrossTable(records$over_50k, records$relationship)
+CrossTable(records$over_50k, records$working_class)
 
 table(records$education_num)
 
@@ -93,9 +96,14 @@ detach(records)
 
 summary(logit)
 
+# AIC: 29496
+
 # odds ratios 
 or <- exp(coef(logit)[-1])
 or
 
+
+# write our file to a csv for plotting in D3
+write.csv(records, file="c:/users/roshmaster/desktop/d3.csv")
 
 
