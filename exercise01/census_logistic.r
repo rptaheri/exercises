@@ -10,6 +10,7 @@ library(contrast)
 library(aod)
 library(ggplot2)
 library(aod)
+library(caret)
 
 records = read.csv(records_loc) #read csv file
 
@@ -158,8 +159,5 @@ plot(logit.roc)
 
 # ROC = 0.9058
 logit.roc
-
-# write our file to a csv for plotting in D3
-write.csv(records, file=outloc)
 
 
