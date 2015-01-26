@@ -76,9 +76,9 @@ colnames(valid_score) <- c("over_50k", "predicted_prob")
 valid_score$cutoff50[valid_score$predicted_prob >= 0.5] <- 1
 valid_score$cutoff50[valid_score$predicted_prob < 0.5] <- 0
 
-valid_score$specificity_50[valid_score$cutoff50 == valid_score$over_50k] <- 1
-valid_score$specificity_50[valid_score$cutoff50 != valid_score$over_50k] <- 0
+valid_score$classification_50[valid_score$cutoff50 == valid_score$over_50k] <- 1
+valid_score$classification_50[valid_score$cutoff50 != valid_score$over_50k] <- 0
 
 
-colMeans(valid_score, na.rm = TRUE) #specificity at 50% cutoff is 83.3% in validation
+colMeans(valid_score, na.rm = TRUE) # classification rate at 50% cutoff is 83.3% in validation
 
